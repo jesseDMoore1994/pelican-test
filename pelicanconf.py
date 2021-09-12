@@ -3,7 +3,7 @@
 
 AUTHOR = 'Jesse Moore'
 SITENAME = 'pelican_test'
-SITEURL = ''
+SITEURL = '://jessedmoore1994.github.io/pelican-test'
 
 PATH = 'content'
 
