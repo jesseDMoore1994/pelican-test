@@ -1,3 +1,6 @@
-[submodule "Flex"]
-	path = Flex
-	url = https://github.com/jesseDMoore1994/Flex
+[submodule "pelican-themes"]
+	path = pelican-themes
+	url = git@github.com:getpelican/pelican-themes.git
+[submodule "pelican-plugins"]
+	path = pelican-plugins
+	url = https://github.com/getpelican/pelican-plugins
