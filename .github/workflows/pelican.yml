@@ -14,7 +14,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: nelsonjchen/gh-pages-pelican-action@0.1.10
+    - uses: JesseDMoore1994/gh-pages-pelican-action@shell-init-scripts
       env:
         PELICAN_THEME_FOLDER: ./Flex
+        USER_DEFINED_INIT_SCRIPT: ./initialize.sh
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
