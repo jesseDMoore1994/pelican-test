@@ -14,11 +14,11 @@ jobs:
 
     steps:
     - name: Checkout source repository
-	  uses: actions/checkout@v2
+      uses: actions/checkout@v2
       with:
         submodules: true
-	- name: Checkout Theme
-	  run: cd pelican-themes && git submodule update --init Flex && cd ..
+    - name: Checkout Theme
+      run: cd pelican-themes && git submodule update --init Flex && cd ..
     - uses: JesseDMoore1994/gh-pages-pelican-action@0.1.10
       env:
         PELICAN_THEME_FOLDER: ./Flex
