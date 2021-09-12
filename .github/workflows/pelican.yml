@@ -17,9 +17,6 @@ jobs:
       uses: actions/checkout@v2
       with:
         submodules: true
-    - name: Checkout Theme
-      run: cd pelican-themes && git submodule update --init Flex && cd ..
     - uses: JesseDMoore1994/gh-pages-pelican-action@0.1.10
       env:
-        PELICAN_THEME_FOLDER: ./pelican-themes/Flex
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

@@ -39,6 +39,6 @@ JINJA_ENVIRONMENT = {
     'extensions': ['jinja2.ext.i18n'],
 }
 
-THEME = 'pelican-themes/Flex'
+THEME = 'pelican-themes/monospace'
 
 STATIC_PATHS = ["theme/img/profile.png"]
