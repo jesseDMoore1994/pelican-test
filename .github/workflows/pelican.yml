@@ -13,9 +13,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout source repository
+      uses: actions/checkout@v2
       with:
-        submodules: recursive
+        submodules: true
+    - name: Checkout Theme
+      run: cd pelican-themes && git submodule update --init Flex && cd ..
     - uses: JesseDMoore1994/gh-pages-pelican-action@0.1.10
       env:
         PELICAN_THEME_FOLDER: ./Flex
